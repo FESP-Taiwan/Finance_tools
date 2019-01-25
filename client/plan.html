@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/plan.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <title>資產/財務規劃</title>
+</head>
+
+<body>
+    <nav>
+        <div id="logo"> </div>
+        <ul>
+            <li><a class="link" href="#1">品牌理念</a></li>
+            <li><a class="link" href="#2">如何使用</a></li>
+            <li><a class="link" href="#3">關於我們</a></li>
+        </ul>
+        <div id="myAccount"> </div>
+    </nav>
+    <main>
+        <div class="left">
+            <div class="asset assetNow">
+                <div class="title">資產現況</div><br>
+                <div class="block">
+                    <div class="input col-3 input-effect assetNowPrincipal">
+                        <input class="effect-16" type="text" placeholder="">
+                        <label>現有存款</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="input col-3 input-effect assetNowDeposit">
+                        <input class="effect-16" type="text" placeholder="">
+                        <label>每月固定存款</label>
+                        <span class="focus-border"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="asset assetFuture">
+                <div class="title">預期未來生活</div><br>
+                <div class="block">
+                    <div class="input col-3 input-effect assetNowPrincipal">
+                        <input class="effect-16" type="text" placeholder="">
+                        <label>預計幾歲開始工作</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="input col-3 input-effect assetNowDeposit">
+                        <input class="effect-16" type="text" placeholder="">
+                        <label>預計幾歲退休</label>
+                        <span class="focus-border"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chart">chart</div>
+
+    </main>
+    <script>
+        // JavaScript for label effects only
+        $(window).load(function () {
+            $(".col-3 input").val("");
+
+            $(".input-effect input").focusout(function () {
+                if ($(this).val() != "") {
+                    $(this).addClass("has-content");
+                } else {
+                    $(this).removeClass("has-content");
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>
