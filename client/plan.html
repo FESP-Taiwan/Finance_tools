@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/plan.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
     <title>資產/財務規劃</title>
 </head>
 
@@ -20,18 +21,18 @@
         </ul>
         <div id="myAccount"> </div>
     </nav>
-    <main>
+    <main id="app">
         <div class="left">
             <div class="asset assetNow">
                 <div class="title">資產現況</div><br>
                 <div class="block">
                     <div class="input col-3 input-effect assetNowPrincipal">
-                        <input class="effect-16" type="text" placeholder="">
+                        <input class="effect-16" type="text" placeholder="" onkeyup="value=value.replace(/[^\d]/g,'') ">
                         <label>現有存款</label>
                         <span class="focus-border"></span>
                     </div>
                     <div class="input col-3 input-effect assetNowDeposit">
-                        <input class="effect-16" type="text" placeholder="">
+                        <input class="effect-16" type="text" placeholder="" onkeyup="value=value.replace(/[^\d]/g,'') ">
                         <label>每月固定存款</label>
                         <span class="focus-border"></span>
                     </div>
@@ -41,15 +42,16 @@
                 <div class="title">預期未來生活</div><br>
                 <div class="block">
                     <div class="input col-3 input-effect assetNowPrincipal">
-                        <input class="effect-16" type="text" placeholder="">
+                        <input v-model="message" class="effect-16" type="text" placeholder="" onkeyup="value=value.replace(/[^\d]/g,'') ">
                         <label>預計幾歲開始工作</label>
                         <span class="focus-border"></span>
                     </div>
                     <div class="input col-3 input-effect assetNowDeposit">
-                        <input class="effect-16" type="text" placeholder="">
+                        <input class="effect-16" type="text" placeholder="" onkeyup="value=value.replace(/[^\d]/g,'') ">
                         <label>預計幾歲退休</label>
                         <span class="focus-border"></span>
                     </div>
+                    <div>{{ message }}</div>
                 </div>
             </div>
         </div>
@@ -69,6 +71,13 @@
                 }
             })
         });
+
+        var vm = new Vue({
+            el: "#app",
+            data:{
+                message:""
+            }
+        })
     </script>
 </body>
 
