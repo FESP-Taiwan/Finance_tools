@@ -43,6 +43,7 @@ nav {
     box-sizing: inherit;
 }
 
+/* ul */
 ul {
     position: absolute;
     top: 10%;
@@ -79,6 +80,8 @@ ul {
     transform-origin: center left;
     z-index: 3;
 }
+
+/* ----------------------- */
 
 header {
     background-color: #F6F6F7;
