@@ -240,8 +240,7 @@ input[type="text"] {
 .asset {
     margin-bottom: 100px;
 }
-.title {
-   
+.title {  
     display: block;
     margin-left: 150px;
     font-size: 80px;
@@ -250,8 +249,6 @@ input[type="text"] {
     display: inline-flex;
     margin-top: 20px;
     margin-left: 160px;
-    
-
 }
 
 .input {

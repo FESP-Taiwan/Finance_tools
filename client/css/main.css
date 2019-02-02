@@ -21,6 +21,7 @@ nav {
     position: fixed;
     width: 100%;
     margin: 10px;
+    z-index: 5;
 
 }
 
@@ -80,7 +81,6 @@ ul {
 }
 
 header {
-    position: relative;
     background-color: #F6F6F7;
     background-image: url(https://i.imgur.com/NDA9NFu.jpg);
     height: 100vh;
@@ -106,7 +106,10 @@ button {
     font-size: 36px;
     border: solid 3px black;
     border-radius: 10px;
+    z-index: 99;
+    cursor: pointer !important;
 }
+
 
 section {
     position: relative;
