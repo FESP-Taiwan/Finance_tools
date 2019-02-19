@@ -145,9 +145,10 @@ h2:before {
 
 /* necessary to give position: relative to parent. */
 input[type="text"] {
+    display: inline-block;
     font: 15px/24px "Lato", Arial, sans-serif;
     color: #333;
-    width: 100%;
+    width: 150px;
     box-sizing: border-box;
     letter-spacing: 1px;
 
@@ -237,11 +238,13 @@ input[type="text"] {
 .left {
     position: relative;
     top: 150px;
-    flex: 5
+    max-width: 50vw;
+    flex: 5;
 }
 /* 資產現況 */
 .asset {
     margin-bottom: 100px;
+    max-width: 50vw;
 }
 .title {  
     display: block;
@@ -250,20 +253,21 @@ input[type="text"] {
 }
 .block {
     display: inline-flex;
-    margin-top: 20px;
+    flex-wrap:wrap;
     margin-left: 160px;
+    height: 100%;
+    max-width: 30vw;
 }
 
 .input {
-    margin-right: 10vh;
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 2vw;
 }
-.assetNowPrincipal {
-    width: 150px;
-    flex:5;
-}
-.assetNowDeposit {
-    width: 150px;
-    flex:5;
+
+.inputs {
+    display: block;
+    width: 100%;
 }
 
 /* 預期未來生活 */
@@ -274,6 +278,7 @@ input[type="text"] {
 .chart{
     position: fixed;
     top: 150px;
+    width: 50vw;
     left: 50%;
     flex: 5
 }
@@ -283,7 +288,8 @@ input[type=range] {
     -webkit-appearance: none;
     width: 200px;
     margin: 10.8px 0;
-    margin-left: 150px;
+    margin-top: 50px;
+
   }
   input[type=range]:focus {
     outline: none;
@@ -381,6 +387,6 @@ input[type=range] {
   /* input range slider-level */
   #level {
       margin-top: 10px;
-      margin-left: 150px;
       opacity: 0.8;
   }
+
