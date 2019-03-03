@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.187 53.187">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #707070;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_224" data-name="Group 224" transform="translate(-1759.5 -70.813)">
+    <g id="Ellipse_29" data-name="Ellipse 29" class="cls-1" transform="translate(1759.5 70.813)">
+      <circle class="cls-3" cx="26.594" cy="26.594" r="26.594"/>
+      <circle class="cls-4" cx="26.594" cy="26.594" r="26.094"/>
+    </g>
+    <g id="Group_196" data-name="Group 196" transform="translate(1774.513 83.691)">
+      <g id="Ellipse_28" data-name="Ellipse 28" class="cls-1" transform="translate(3.526)">
+        <circle class="cls-3" cx="7.536" cy="7.536" r="7.536"/>
+        <circle class="cls-4" cx="7.536" cy="7.536" r="7.036"/>
+      </g>
+      <line id="Line_8" data-name="Line 8" class="cls-2" x1="6.084" y2="14.381" transform="translate(0 12.929)"/>
+      <line id="Line_9" data-name="Line 9" class="cls-2" x2="6.914" y2="14.657" transform="translate(16.178 12.929)"/>
+      <line id="Line_10" data-name="Line 10" class="cls-2" x2="23.092" transform="translate(0 27.31)"/>
+    </g>
+    <g id="Ellipse_29-2" data-name="Ellipse 29" class="cls-1" transform="translate(1759.5 70.813)">
+      <circle class="cls-3" cx="26.594" cy="26.594" r="26.594"/>
+      <circle class="cls-4" cx="26.594" cy="26.594" r="26.094"/>
+    </g>
+    <g id="Group_196-2" data-name="Group 196" transform="translate(1774.513 83.691)">
+      <g id="Ellipse_28-2" data-name="Ellipse 28" class="cls-1" transform="translate(3.526)">
+        <circle class="cls-3" cx="7.536" cy="7.536" r="7.536"/>
+        <circle class="cls-4" cx="7.536" cy="7.536" r="7.036"/>
+      </g>
+      <line id="Line_8-2" data-name="Line 8" class="cls-2" x1="6.084" y2="14.381" transform="translate(0 12.929)"/>
+      <line id="Line_9-2" data-name="Line 9" class="cls-2" x2="6.914" y2="14.657" transform="translate(16.178 12.929)"/>
+      <line id="Line_10-2" data-name="Line 10" class="cls-2" x2="23.092" transform="translate(0 27.31)"/>
+    </g>
+  </g>
+</svg>
