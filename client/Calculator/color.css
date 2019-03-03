@@ -1,0 +1,29 @@
+*{
+}
+.input{
+  right:150px;
+  position:absolute;
+  margin:auto;
+  padding:auto;
+}
+.cost{
+  left:150px;
+  position:absolute;
+  margin:auto;
+  padding:auto;
+}
+#area-chart{
+  position:absolute;
+  left:350px;
+  width : 50%;
+}
+.charts{
+  position:relative;
+}
+.needed{
+  
+  position:absolute;
+}
+.house,.car{
+  position:relative;
+}
