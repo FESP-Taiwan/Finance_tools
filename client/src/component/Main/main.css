@@ -1,0 +1,166 @@
+
+*,
+:after,
+:before,
+header:not {
+    box-sizing: inherit;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+
+
+header {
+    /* background-color: #F6F6F7; */
+    background-image: url(https://i.imgur.com/NDA9NFu.jpg);
+    height: calc(100vh);
+    width: 100%;
+    background-size: contain;
+    background-position: 47% 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    animation-name: appearOpacity;
+    animation-duration: 1s;
+    animation-fill-mode: forwards 
+}
+
+@keyframes appearOpacity{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 0.6;
+    }
+}
+
+
+
+#slogan {
+    position: absolute;
+    font-size: 36px;
+    color: black
+}
+
+button {
+    position: relative;
+    top: 30%;
+    padding: 5px;
+    font-size: 30px;
+    background-color: #f7f4f7;
+    border: solid 2px black;
+    border-radius: 10px;
+    z-index: 99 !important; 
+    cursor: pointer !important;
+}
+
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* hr */
+.hr1 {
+    position: sticky;
+    top: 150px;
+    background-color: #b6b8b9;
+    opacity: .5;
+}
+
+.hr2 {
+    position: sticky;
+    top: 85%;
+    background-color: #b6b8b9;
+    opacity: .5;
+}
+
+.line {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    opacity: .5;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #b6b8b9;
+}
+
+.-l {
+
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: appearleft;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards 
+}
+
+
+
+.-c {
+    top: 100vh;
+    left: 50%;
+}
+
+.-r {
+
+    animation-name: appearrightt;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards 
+}
+
+@keyframes appearleft{
+    from{
+        left: 50%
+    }to{
+        left: 9rem;
+    }
+}
+
+@keyframes appearrightt{
+    from{
+        right: 50%
+    }to{
+        right: 9rem;
+    }
+}
+
+/* <!-- section2 --> */
+
+
+.topic {
+    position: absolute;
+    top: 35%;
+    left: 9rem;
+
+    font-size: 80px;
+
+}
+
+.describe {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    font-size: 18px;
+
+}
+
+@media screen and (min-width: 1500px) {
+    header{
+        background-position: 47.5% 50%;
+    }
+
+    button{
+        font-size: 36px;
+    }
+}

@@ -1,0 +1,21 @@
+
+
+*,
+:after,
+:before {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 500vh;
+    line-height: 1.618;
+    font-family: "Helvetica Neue";
+    position: relative;
+    background-color: #f0eff0;
+    scroll-behavior: smooth;
+    z-index: -1
+}
