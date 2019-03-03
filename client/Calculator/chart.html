@@ -1,0 +1,65 @@
+<head>
+<meta charset=utf-8 />
+<title>Morris.js Area Chart</title>
+  <link rel="stylesheet" type="text/css" href="color.css">
+  <script src="chart-function.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.0/morris.min.js"></script>
+</head>
+<body>
+  <h3 class="text-primary text-center" id="target">
+    Morris js charts
+  </h3>
+  <div class="charts">
+        <form class="cost">
+          <p>Inflation Rate : <span id='inflation'>2</span>%</p>
+          <p>House loan year : <span id='house_deb_year'>30</span>  years</p>
+          <p>Car loan year : <span id='car_deb_year'>6</span> years</p>
+          5.WorkStarted:<br>
+        <input id="wStart" type="text" name="wStart"><br>
+        6.WorkEnded:<br>
+        <input id="wEnded" type="text" name="wEnded"><br>
+        7.month_cost:<br>
+        <input id="mCost" type="text" name="mCost"><br>
+        8.House:<br>
+        <div class = "house">
+        <input id="house_year" type="text" name="house_year" style="width:50px;position:absolute;">
+          <span style="position:absolute;left:55px;">歲</span>
+        <input id="house_cost" type="text" name="house_cost" style="width:70px;position:absolute;top:0px;right:10px;">
+          <span style="position:absolute;right:-5px;">元</span>
+          <br>
+        </div>
+        <br>
+        9.Car:<br>
+        <div class = "car">
+        <input id="car_year" type="text" name="car_year" style="width:50px;position:absolute;">
+          <span style="position:absolute;left:55px;">歲</span>
+        <input id="car_cost" type="text" name="car_cost" style="width:70px;position:absolute;top:0px;right:10px;">
+          <span style="position:absolute;right:-5px;">元</span>
+          <br>
+        </div>
+        <br>
+        Final Cost:<br>
+        <h2 id="costFinal"></h2>
+    </form>
+  <div id="area-chart" ></div>
+  <form class="input">
+        1.year:<br>
+        <input id="years" type="text" name="year"><br>
+        2.notion:<br>
+        <input id="values" type="text" name="val"><br>
+        3.earn_month:<br>
+        <input id="earns" type="text" name="earns"><br>
+        4.invest_month:<br>
+        <input id="inputs" type="text" name="inputs"><br>
+        rate(%):<br>
+        <input id="rates" type="text" name="rate"><br>
+        Final Notion:<br>
+        <h2 id="notion"></h2>
+        SlideBar:<br>
+        <h2 id="slider"></h2>
+    </form>
+  </div>
+  
+</body>
