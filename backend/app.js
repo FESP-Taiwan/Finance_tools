@@ -1,10 +1,12 @@
 const express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
+var request = require('request');
+var config = require("./config/config.js");
 const app = express();
-
 const logger = require('./middleware/logger');
 
+port = 3000;
 //Set ejs as view engine 
 app.set('view engine','ejs');
 //Specify the folder to render
@@ -19,6 +21,7 @@ app.use('/',require('./routes/api/index'));
 app.use('/login',require('./routes/api/login'));
 app.use('/registration',require('./routes/api/registration'));
 app.use('/api/members/',require('./routes/api/member'));
+
 
 //Static Path
 app.use(express.static(path.join(__dirname,'public')));

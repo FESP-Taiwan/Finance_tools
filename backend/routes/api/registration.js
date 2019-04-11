@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 var db = require('./connection');
 var uuid = require('uuid');
+
+
 router.post('/',(req,res)=>{
     res.render('registration'); 
  });
