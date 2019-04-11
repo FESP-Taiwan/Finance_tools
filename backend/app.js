@@ -1,12 +1,9 @@
 const express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
-var request = require('request');
-var config = require("./config/config.js");
 const app = express();
 const logger = require('./middleware/logger');
 
-port = 3000;
 //Set ejs as view engine 
 app.set('view engine','ejs');
 //Specify the folder to render
