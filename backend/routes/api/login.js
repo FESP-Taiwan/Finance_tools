@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+var bcrypt = require('bcrypt');
 var db = require('./connection');
 var app = express();
 var request = require('request');
@@ -18,7 +19,7 @@ router.post('/dologin',(req,res)=>{
         username:req.body.username,
         password:req.body.password,
     };
-    var cmd = "select * from clientinfo where username="+"\""+olduser.username+"\"";
+    var cmd = "select * from user_info where account="+"\""+olduser.username+"\"";
     cmd = cmd.replace('\'','');
     console.log(cmd);
     db.query(cmd,(err,result)=>{
@@ -29,17 +30,19 @@ router.post('/dologin',(req,res)=>{
        console.log('【Result】');
        console.log(result);
        console.log('長度='+result.length.toString());
+       var hash = result[0].password;
        if(result=='')
        {
             res.send('使用者不存在');
        }
        else{
-           if(result[0].password!=olduser.password){
+
+           if(!bcrypt.compareSync(olduser.password, hash)){
                 res.send('密碼錯誤');
            }
            else{
-           res.send(`歡迎回來! ${olduser.username}`);
-       }
+                res.send(`歡迎回來! ${olduser.username}`);
+           }
     }
     });
     console.log(olduser);
